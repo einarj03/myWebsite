@@ -1,0 +1,17 @@
+{
+  "name": "mywebsite",
+  "description": "YesJarvis website",
+  "main": "index.js",
+  "authors": [
+    "Einar Jonsson <einarjonsson@mac.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "toastr": "^2.1.3",
+    "angular": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
