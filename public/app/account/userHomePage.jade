@@ -1,0 +1,12 @@
+.container
+  .jumbotron.text-center
+    h1 Hello {{identity.currentUser.firstName}}
+    h3 Welcome Back!
+    p(ng-hide="identity.currentUser.isAdmin()") Your Jarvis is 
+      b(ng-hide="identity.currentUser.isAdmin()")(style="color:blue") {{identity.currentUser.jarvis}}
+    p Content Goes Here
+    
+  .jumbotron.text-center
+    h1 Latest News and Deals
+    p Content Goes Here
+  

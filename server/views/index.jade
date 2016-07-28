@@ -1,0 +1,24 @@
+extends ../includes/layout
+
+block main-content
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar")
+          .icon-bar
+          .icon-bar
+          .icon-bar
+        a.navbar-brand(href="/") Yes Jarvis
+          h6 Your Personal Helper
+      .navbar-collapse.collapse(id="myNavbar")
+        ul.nav.navbar-nav
+          li
+            a(href="/") Home
+                
+        div(ng-include="'/partials/account/navbar-login'")
+            
+  section.content
+    div(ng-view)
+
+  footer.container.text-center
+    p &copy: 2016 Yes Jarvis UCL Advances

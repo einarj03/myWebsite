@@ -1,0 +1,22 @@
+.container
+  table.table
+    tr
+      th Title
+      th First Name
+      th Last Name
+      th Age  
+      th Address
+      th Jarvis
+    tr(ng-repeat="user in users")
+      td {{user.title}}
+      td {{user.firstName}}
+      td {{user.lastName}}
+      td {{user.age}}
+      td {{user.streetAddress + ', ' + user.city + ', ' + user.postCode}}
+      td {{user.jarvis}}
+  br
+  hr
+  .form-group
+    .col-md-10.col-md-offset-2
+      .pull-right
+        button.btn.btn-primary(ng-click="go('/userHomePage')") Back

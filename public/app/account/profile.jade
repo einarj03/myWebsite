@@ -1,0 +1,135 @@
+.container
+  .well
+    form.form-horizontal(name="profileForm")
+      fieldset
+        legend My Profile
+        h3 Account
+        hr
+        .form-group
+          label.col-md-2.control-label(for="email") Email* (username)
+          .col-md-9
+            input.form.control(name="email", type="email", placeholder="Username", ng-model="email", required)
+          .col-md-1
+            div
+              i(style="color:red") required
+        .form-group
+          label.col-md-2.control-label(for="password") Password
+          .col-md-10
+            input.form.control(name="password", type="password", placeholder="********", ng-model="password")
+        br
+        h3 Name
+        hr
+        .form-group
+          label.col-md-2.control-label(for="Thetitle") Title*
+          .col-md-9
+            input.form.control(name="Thetitle", type="radio", value="Mr", ng-model="Thetitle", checked, required) 
+            |   Mr
+            br
+            input.form.control(name="Thetitle", type="radio", value="Miss", ng-model="Thetitle", required) 
+            |   Miss
+            br
+            input.form.control(name="Thetitle", type="radio", value="Mrs", ng-model="Thetitle", required) 
+            |   Mrs
+            br
+            input.form.control(name="Thetitle", type="radio", value="Ms", ng-model="Thetitle", required) 
+            |   Ms
+            br
+            input.form.control(name="Thetitle", type="radio", value="Dr", ng-model="Thetitle", required) 
+            |   Dr
+          .col-md-1
+            div
+              i(style="color:red") required
+        .form-group
+          label.col-md-2.control-label(for="fname") First Name*
+          .col-md-9
+            input.form.control(name="fname", type="text", placeholder="First Name", ng-model="fname", required)
+          .col-md-1
+            div
+              i(style="color:red") required
+        .form-group
+          label.col-md-2.control-label(for="lname") Last Name*
+          .col-md-9
+            input.form.control(name="lname", type="text", placeholder="Last Name", ng-model="lname", required)
+          .col-md-1
+            div
+              i(style="color:red") required
+        br
+        h3 Extra Details
+        hr
+        .form-group
+          label.col-md-2.control-label(for="gender") Gender*
+          .col-md-9
+            input.form.control(name="gender", type="radio", value="male", ng-model="gender", checked, required)
+            |   male
+            br
+            input.form.control(name="gender", type="radio", value="female", ng-model="gender", required)
+            |   female
+            br
+            input.form.control(name="gender", type="radio", value="other", ng-model="gender", required)
+            |   other
+            br
+            input.form.control(name="gender", type="radio", value="prefer not to say", ng-model="gender", required)
+            |   prefer not to say
+          .col-md-1
+            div
+              i(style="color:red") required
+        .form-group
+          label.col-md-2.control-label(for="age") Age
+          .col-md-10
+            input.form.control(name="age", type="number", placeholder="Age", min="16", max="130" ng-model="age")
+        br
+        h3 Address
+        hr
+        .form-group
+          label.col-md-2.control-label(for="theStreetAddress") Street Address*
+          .col-md-9
+            input.form.control(name="theStreetAddress", type="text", placeholder="Street Address", ng-model="theStreetAddress", required)
+          .col-md-1
+            div
+              i(style="color:red") required
+        .form-group
+          label.col-md-2.control-label(for="theCity") City
+          .col-md-10
+            input.form.control(name="theCity", type="text", placeholder="City", ng-model="theCity")
+        .form-group
+          label.col-md-2.control-label(for="theCounty") County
+          .col-md-10
+            input.form.control(name="theCounty", type="text", placeholder="County", ng-model="theCounty")
+        .form-group
+          label.col-md-2.control-label(for="thePostCode") Postcode*
+          .col-md-9
+            input.form.control(name="thePostCode", type="text", placeholder="Postcode", ng-model="thePostCode", required)
+          .col-md-1
+            div
+              i(style="color:red") required
+        br
+        h3 Contact Details
+        hr
+        .form-group
+          label.col-md-2.control-label(for="homeTelephone") Home Telephone*
+          .col-md-9
+            input.form.control(name="homeTelephone", type="number", placeholder="08953748374", min="0", max="9999999999", ng-model="homeTelephone", required)
+          .col-md-1
+            div
+              i(style="color:red") required
+        .form-group
+          label.col-md-2.control-label(for="mobilePhone") Mobile
+          .col-md-10
+            input.form.control(name="mobilePhone", type="number", placeholder="04983574837", min="0", max="9999999999", ng-model="mobilePhone")
+        .form-group
+          label.col-md-2.control-label(for="contactEmail") Contact Email
+          .col-md-10
+            input.form.control(name="contactEmail", type="email", placeholder="e.g ContactEmail@#####.co.uk", ng-model="contactEmail")
+        br
+        h3(ng-hide="identity.currentUser.isAdmin()") My Jarvis
+        hr(ng-hide="identity.currentUser.isAdmin()")
+        .form-group(ng-hide="identity.currentUser.isAdmin()")
+          label.col-md-2.control-label(for="jarvis") Jarvis Name
+          .col-md-10
+            input.form.control(name="jarvis", type="text", placeholder="jarvis", ng-model="jarvis")
+        .form-group
+          .col-md-10.col-md-offset-2
+            .pull-right
+              button.btn.btn-primary(ng-click="update()", ng-disabled="signupForm.$invalid") Save Changes
+              | &nbsp;
+              a.btn.btn-default(href="/userHomePage") Cancel
