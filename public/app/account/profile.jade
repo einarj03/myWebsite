@@ -13,6 +13,13 @@
             div
               i(style="color:red") required
         .form-group
+          label.col-md-2.control-label(for="superman") Superman
+          .col-md-9
+            input.form.control(name="superman", type="text", placeholder="Superman status", ng-model="superman", required)
+          .col-md-1
+            div
+              i(style="color:red") required
+        .form-group
           label.col-md-2.control-label(for="password") Password
           .col-md-10
             input.form.control(name="password", type="password", placeholder="********", ng-model="password")

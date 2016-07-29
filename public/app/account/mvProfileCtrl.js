@@ -4,6 +4,7 @@ angular.module('app').controller('mvProfileCtrl', function($scope, mvAuth, mvIde
   $scope.email = mvIdentity.currentUser.username;
   $scope.fname = mvIdentity.currentUser.firstName;
   $scope.lname = mvIdentity.currentUser.lastName;
+  $scope.superman = mvIdentity.currentUser.superman;
   $scope.Thetitle = mvIdentity.currentUser.title;
   $scope.gender = mvIdentity.currentUser.gender;
   $scope.age = mvIdentity.currentUser.age;

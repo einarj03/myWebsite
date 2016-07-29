@@ -8,17 +8,26 @@
         .form-group
           label.col-md-2.control-label(for="email") Email* (username)
           .col-md-9
-            input.form.control(name="email", type="email", placeholder="Username", ng-model="email", required)
+            input.form.control(name="email", type="email", placeholder="Email", ng-model="email", required)
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
+
+        .form-group
+          label.col-md-2.control-label(for="superman") Superman*
+          .col-md-9
+            input.form.control(name="superman", type="text", placeholder="Superman status", ng-model="superman", required)
+          .col-md-1
+            div
+              i(style="color:red") Required
+
         .form-group
           label.col-md-2.control-label(for="password") Password*
           .col-md-9
             input.form.control(name="password", type="password", placeholder="Password", ng-model="password", required)
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         br
         h3 Name
         hr
@@ -41,21 +50,21 @@
             |   Dr
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         .form-group
           label.col-md-2.control-label(for="fname") First Name*
           .col-md-9
             input.form.control(name="fname", type="text", placeholder="First Name", ng-model="fname", required)
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         .form-group
           label.col-md-2.control-label(for="lname") Last Name*
           .col-md-9
             input.form.control(name="lname", type="text", placeholder="Last Name", ng-model="lname", required)
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         br
         h3 Extra Details
         hr
@@ -75,7 +84,7 @@
             |   prefer not to say
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         .form-group
           label.col-md-2.control-label(for="age") Age
           .col-md-10
@@ -89,7 +98,7 @@
             input.form.control(name="theStreetAddress", type="text", placeholder="Street Address", ng-model="theStreetAddress", required)
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         .form-group
           label.col-md-2.control-label(for="theCity") City
           .col-md-10
@@ -104,7 +113,7 @@
             input.form.control(name="thePostCode", type="text", placeholder="Postcode", ng-model="thePostCode", required)
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         br
         h3 Contact Details
         hr
@@ -114,7 +123,7 @@
             input.form.control(name="homeTelephone", type="number", placeholder="08953748374", min="0", max="9999999999", ng-model="homeTelephone", required)
           .col-md-1
             div
-              i(style="color:red") required
+              i(style="color:red") Required
         .form-group
           label.col-md-2.control-label(for="mobilePhone") Mobile
           .col-md-10
