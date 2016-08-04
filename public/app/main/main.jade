@@ -1,5 +1,8 @@
 .container
   .jumbotron.text-center
+    form(action='', method='POST')
+      script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_gvt1pMJi9VxKvejlTzmCcH42', data-amount='999', data-name='Demo Site', data-description='Widget', data-image='/img/documentation/checkout/marketplace.png', data-locale='auto', data-zip-code='true', data-currency='gbp')
+
     h1 Yes Jarvis
     h3 Let us save you TIME…
     p We know you work long hours…
