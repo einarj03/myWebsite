@@ -14,7 +14,7 @@ footer {
   padding-top: 15px;
 }
 footer p {
-  border-top: 1px solid #d7e0e2;
+  border-top: 1px solid #ff4447;
 }
 .navbar-form .form-group {
   margin-left: 10px;
@@ -26,8 +26,8 @@ footer p {
   top: 70px;
 }
 .toast-success {
-  background-color: #13987e;
+  background-color: #ff4447;
 }
 .JumboHeading {
-  color: #13987e;
+  color: #ff4447;
 }
