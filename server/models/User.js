@@ -13,7 +13,6 @@ var userSchema = mongoose.Schema({
   hashed_pwd: {type:String, required:'{PATH} is required!'},
   roles: [String],
   age: Number,
-  superman: String,
   streetAddress: String,
   city: String,
   county: String,

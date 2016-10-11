@@ -39,7 +39,6 @@ exports.updateUser = function(req, res) {
   req.user.firstName = userUpdates.firstName;
   req.user.username = userUpdates.username;
   req.user.lastName = userUpdates.lastName;
-  req.user.superman = userUpdates.superman;
   req.user.title = userUpdates.title;
   req.user.gender = userUpdates.gender;
   req.user.age = userUpdates.age;
